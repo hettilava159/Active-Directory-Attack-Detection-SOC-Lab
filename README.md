@@ -1,3 +1,4 @@
+ HEAD
 # Active Directory Attack Detection SOC Lab
 
 ## ?? Objective
@@ -40,3 +41,5 @@ See: setup/lab-setup.md
 
 ##  Skills
 SIEM | Detection Engineering | AD Security | Threat Analysis
+# ad-attack-detection-lab
+ 3a53a29ebb4e0f47facabf9649fe4f6b3fea32e4
