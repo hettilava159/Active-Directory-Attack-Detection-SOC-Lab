@@ -19,8 +19,8 @@ Domain: hettilava.local
 ---
 
 ## 🌐 Network Configuration
-- Use Internal Network
-- Assign static IPs
+- Use NAT Network
+- Assign static IPs as shown above
 - Set DNS to 192.168.56.7
 
 Verify:
@@ -30,7 +30,7 @@ ping 192.168.56.10
 ## 📸 Setup Screenshots
 
 <p align="center">
-  <img src="../screenshots/" width="30%" />
+  <img src="../screenshot/VM_NAT_Network.png" width="33%" />
   <img src="../screenshots/" width="30%" />
   <img src="../screenshots/" width="30%" />
 </p>
@@ -40,7 +40,7 @@ ping 192.168.56.10
 ## 🏢 Active Directory Setup
 
 Install AD:
-Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
+Install-WindowsServer(2022): https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022
 
 Promote:
 Install-ADDSForest -DomainName "hettilava.local"
