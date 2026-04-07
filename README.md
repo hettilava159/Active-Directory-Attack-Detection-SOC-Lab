@@ -116,9 +116,9 @@ The repository includes:
 - Log evidence from Sysmon and Windows logs
 
 📂 Available in:
-- `screenshots/attacks/`
-- `screenshots/detections/`
-- `screenshots/setup/`
+- `screenshot/attacks/`
+- `screenshot/detections/`
+- `screenshot/setup/`
 
 ---
 
