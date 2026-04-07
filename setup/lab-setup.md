@@ -40,8 +40,6 @@ ping 192.168.56.10
 ## 🏢 Active Directory Setup
 
 Install AD:
-Install-WindowsServer(2022): https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022
-
 Promote:
 Install-ADDSForest -DomainName "hettilava.local"
 
