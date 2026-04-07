@@ -33,7 +33,7 @@ The lab environment simulates a small enterprise network with centralized loggin
 - Domain-based authentication monitoring
 - Segregated attacker and victim machines
 
-📸 _[Insert architecture diagram in `/screenshots/architecture/`]_
+![Architecture diagram](/screenshot/architecture.png)
 
 ---
 
