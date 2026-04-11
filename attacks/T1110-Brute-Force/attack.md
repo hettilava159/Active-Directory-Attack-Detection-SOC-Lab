@@ -68,10 +68,9 @@ Expected output:
 ```
 3389/tcp open  ms-wbt-server  Microsoft Terminal Services
 ```
-![Hydra Attack Output](../screenshots/attacks/T1110-brute-force/hydra-success.png)
+![Hydra Attack Output](/screenshot/attacks/T1110-brute-force/hydra-pre-check.png)
 
-
-> **Note:** In this lab, the target username `dakshf` is a known domain user on `hettilava.local`.
+> **Note:** In this lab, the target username `dakshm` is a known domain user on `hettilava.local`.
 > In real engagements the username would be obtained via LDAP enumeration, OSINT, or email harvesting.
 
 ---
@@ -114,6 +113,9 @@ hydra -l dakshf -P ~/lab/custom_pass.txt rdp://192.168.56.100 -V -t 4
 | `rdp://192.168.56.100` | Target protocol and IP (Windows 10 victim) |
 | `-V` | Verbose — show each attempt |
 | `-t 4` | 4 parallel tasks (keep low to avoid lockout) |
+
+![Hydra Attack Output](/screenshot/attacks/T1110-brute-force/hydra-success.png)
+
 
 > ⚠️ **Lab Note:** If NLA (Network Level Authentication) is enforced on the Windows 10 machine,
 > Hydra's RDP module will still negotiate pre-auth and detect valid credentials.
@@ -172,10 +174,6 @@ Source IP:      192.168.56.250
 > **Key signal:** Logon Type `10` is unique to RDP interactive sessions. This differentiates
 > an RDP brute force from a network share login (Type 3) or local console login (Type 2).
 
-### Rapid Disconnect — Event ID 4634 / 4647
-
-Hydra disconnects immediately after credential validation. A rapid **4624 → 4634** pair from
-the same source IP is a strong indicator of automated, non-human login behavior.
 
 ---
 
