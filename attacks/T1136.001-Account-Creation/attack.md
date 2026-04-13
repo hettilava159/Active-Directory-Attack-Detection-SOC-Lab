@@ -141,7 +141,6 @@ Invoke-AtomicTest T1136.001 -TestNumbers 3 -Cleanup
 | Windows Security Log | 4724     | Password Reset Attempted                                     |
 | Windows Security Log | 4798     | User Account ChangedUser's Local Group Membership Enumerated |
 | Windows Security Log | 4726     | User Account Deleted                                         |
-| Windows Security Log | 4732     | Member Added to Security-Enabled Local Group                 |
 | Sysmon               | 1        | Process creation: net.exe or powershell.exe                  |
 
 ---
