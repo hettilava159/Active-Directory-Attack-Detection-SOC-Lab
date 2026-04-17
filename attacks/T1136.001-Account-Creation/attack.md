@@ -95,7 +95,7 @@ Invoke-AtomicTest T1136.001 -TestNumbers 4 -InputArgs @{
 }
 ```
 
-![Alt Text](screenshot/attacks/T1136-Accout-Creation/T1136-Accout-Creation-4.png)
+![Alt Text](/screenshot/attacks/T1136-Accout-Creation/T1136-Accout-Creation-4.png)
 
 **Expected trigger:** Windows Security **Event ID 4720**
 ---
@@ -108,7 +108,7 @@ Invoke-AtomicTest T1136.001 -TestNumbers 4 -InputArgs @{
 Invoke-AtomicTest T1136.001 -TestNumbers 5
 ```
 
-![Alt Text](screenshot/attacks/T1136-Accout-Creation/T1136-Accout-Creation-5.png)
+![Alt Text](/screenshot/attacks/T1136-Accout-Creation/T1136-Accout-Creation-5.png)
 
 **Expected trigger:** Windows Security **Event ID 4720**
 
@@ -122,7 +122,7 @@ Invoke-AtomicTest T1136.001 -TestNumbers 5
 Invoke-AtomicTest T1136.001 -TestNumbers 9
 ```
 
-![Alt Text](screenshot/attacks/T1136-Accout-Creation/T1136-Accout-Creation-9.png)
+![Alt Text](/screenshot/attacks/T1136-Accout-Creation/T1136-Accout-Creation-9.png)
 
 **Expected trigger:** Windows Security **Event ID 4720** + Sysmon **Event ID 1** (powershell.exe process)
 
@@ -136,7 +136,7 @@ Invoke-AtomicTest T1136.001 -TestNumbers 5 -Cleanup
 Invoke-AtomicTest T1136.001 -TestNumbers 9 -Cleanup
 ```
 
-![Alt Text](screenshot/attacks/T1136-Accout-Creation/T1136-Accout-Creation-CU.png)
+![Alt Text](/screenshot/attacks/T1136-Accout-Creation/T1136-Accout-Creation-CU.png)
 
 ---
 
