@@ -67,7 +67,7 @@ Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" 
 Invoke-AtomicTest T1136.001 -ShowDetails
 ```
 
-![Alt Text](Active-Directory-Attack-Detection-SOC-Lab/screenshot/attacks/T1136-Accout-Creation/T1136-Accout-Creation-SD.png)
+![Alt Text](/screenshot/attacks/T1136-Accout-Creation/T1136-Accout-Creation-SD.png)
 
 ---
 
